@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <title>Urna Eletrônica</title>
+
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card">
+            <div class="row main-row">
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                    <img class="imagem-candidato" id="imagemCandidato"
+                    src="https://www.arauco.cl/brasil/wp-content/uploads/sites/17/2018/01/branco-supremo-producto-1.jpg">
+                    <div class="d-flex mt-3">
+                        <p id="mensagemDigitar"><b>DIGITE O NÚMERO DE SEU CANDIDATO</b></p>
+                        <p style="display:none" id="mensagemVoto"><b>SEU VOTO PARA PRESIDENTE</b></p>
+                    </div>
+                    <div class="d-flex">
+                        <div class="numero-urna" id="numCandidato1">&nbsp;&nbsp;</div>
+                        <div class="numero-urna ml-2" id="numCandidato2">&nbsp;&nbsp;</div> 
+                        <div class="numero-urna ml-2" id="numCandidato3">&nbsp;&nbsp;</div> 
+                        <div class="numero-urna ml-2" id="numCandidato4">&nbsp;&nbsp;</div>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <p style="display:none" id="nomeCandidato"><b>NOME: </b></p>
+                    </div>
+                    <div class="d-flex">
+                        <p style="display:none" id="partidoCandidato"><b>PARTIDO: </b></p>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <p style="display:none" id="mensagemConfirmar">CLIQUE NO BOTÃO <b>VERMELHO</b> PARA CORRIGIR O VOTO.</p>
+                    </div>
+                    <div class="d-flex">
+                        <p style="display:none" id="mensagemCorrigir">CLIQUE NO BOTÃO <b>VERDE</b> PARA CONFIRMAR O VOTO.</p>
+                    </div>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex mt-3">
+                        <button type="button" class="numero-box" value="1" id="num1" onclick="digitarNumero(this.value)">1</button>
+                        <button type="button" class="numero-box ml-2" value="2" id="num2" onclick="digitarNumero(this.value)">2</button>
+                        <button type="button" class="numero-box ml-2" value="3" id="num3" onclick="digitarNumero(this.value)">3</button>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <button type="button" class="numero-box" value="4" id="num1" onclick="digitarNumero(this.value)">4</button>
+                        <button type="button" class="numero-box ml-2" value="5" id="num2" onclick="digitarNumero(this.value)">5</button>
+                        <button type="button" class="numero-box ml-2" value="6" id="num3" onclick="digitarNumero(this.value)">6</button>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <button type="button" class="numero-box" value="7" id="num1" onclick="digitarNumero(this.value)">7</button>
+                        <button type="button" class="numero-box ml-2" value="8" id="num2" onclick="digitarNumero(this.value)">8</button>
+                        <button type="button" class="numero-box ml-2" value="9" id="num3" onclick="digitarNumero(this.value)">9</button>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <button type="button" class="numero-box" value="0" id="num2" onclick="digitarNumero(this.value)">0</button>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <button type="button" class="numero-box-white ml-3" id="num1" value="branco" onclick="votarEmBranco()">Branco</button>
+                        <button type="button" class="numero-box-red ml-2" id="num2" onclick="corrigir()">Corrige</button>
+                        <button type="button" class="numero-box-green ml-2" id="num3" onclick="confirmarVoto()">Confirma</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="js/script.js"></script>
+</html>

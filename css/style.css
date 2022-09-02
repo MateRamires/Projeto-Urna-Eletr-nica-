@@ -1,0 +1,113 @@
+body {
+    background-color: #E7E7E7;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1400px;
+    }
+}
+
+.card{
+    width: 1300px;
+    height: 700px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.main-row{
+    height: 100%;
+}
+
+
+.numero-urna {
+    font-size: 40px;
+    border-bottom: 2px solid black;
+}
+
+.imagem-candidato{
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+/*********************************** Box da urna ***********************************/
+
+.numero-box{
+    font-size: 30px;
+    width: 100px;
+    height: 65px;
+    border: 2px solid black;
+}
+
+.numero-box:hover{
+    font-size: 30px;
+    width: 100px;
+    height: 65px;
+    border: 2px solid black;
+    background-color: #C0BFBF;
+}
+
+.numero-box-green{
+    position:relative; 
+    bottom:9px;
+
+    font-size: 20px;
+
+    width: 125px;
+    height: 75px;
+    border: 2px solid black;
+    background-color: #319240
+}
+
+.numero-box-green:hover{
+    position:relative; 
+    bottom:9px;
+
+    font-size: 20px;
+
+    width: 125px;
+    height: 75px;
+    border: 2px solid black;
+    background-color: #277233
+}
+
+.numero-box-red{
+    font-size: 20px;
+
+    width: 110px;
+    height: 65px;
+    border: 2px solid black;
+    background-color: #BD2D2D
+}
+
+.numero-box-red:hover{
+    font-size: 20px;
+
+    width: 110px;
+    height: 65px;
+    border: 2px solid black;
+    background-color: #982929
+}
+
+
+.numero-box-white{
+    font-size: 20px;
+    width: 110px;
+    height: 65px;
+    border: 2px solid black;
+}
+
+.numero-box-white:hover{
+    font-size: 20px;
+    width: 110px;
+    height: 65px;
+    border: 2px solid black;
+    background-color: #C0BFBF;
+}
